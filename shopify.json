@@ -1,0 +1,576 @@
+{
+  "id": 5958654951556,
+  "admin_graphql_api_id": "gid://shopify/Order/5958654951556",
+  "app_id": 580111,
+  "browser_ip": "189.105.206.237",
+  "buyer_accepts_marketing": true,
+  "cancel_reason": null,
+  "cancelled_at": null,
+  "cart_token": "hWN053tBNCyPFQYmkQlV5rFa",
+  "checkout_id": 46297029902468,
+  "checkout_token": "d36c5ca8ffb57533807e99a04d66840d",
+  "client_details": {
+    "accept_language": "pt-BR",
+    "browser_height": null,
+    "browser_ip": "189.105.206.237",
+    "browser_width": null,
+    "session_hash": null,
+    "user_agent": "Mozilla/5.0 (Linux; Android 15; SM-S918B Build/AP3A.240905.015.A2; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/137.0.7151.115 Mobile Safari/537.36 Instagram 386.0.0.46.84 Android (35/15; 450dpi; 1080x2316; samsung; SM-S918B; dm3q; qcom; pt_BR; 754399857; IABMV/1)"
+  },
+  "closed_at": null,
+  "company": null,
+  "confirmation_number": "XXV0205Z0",
+  "confirmed": true,
+  "contact_email": "karinapires87@yahoo.com.br",
+  "created_at": "2025-07-01T00:35:36-03:00",
+  "currency": "BRL",
+  "current_shipping_price_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "BRL"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "BRL"
+    }
+  },
+  "current_subtotal_price": "231.57",
+  "current_subtotal_price_set": {
+    "shop_money": {
+      "amount": "231.57",
+      "currency_code": "BRL"
+    },
+    "presentment_money": {
+      "amount": "231.57",
+      "currency_code": "BRL"
+    }
+  },
+  "current_total_additional_fees_set": null,
+  "current_total_discounts": "17.43",
+  "current_total_discounts_set": {
+    "shop_money": {
+      "amount": "17.43",
+      "currency_code": "BRL"
+    },
+    "presentment_money": {
+      "amount": "17.43",
+      "currency_code": "BRL"
+    }
+  },
+  "current_total_duties_set": null,
+  "current_total_price": "231.57",
+  "current_total_price_set": {
+    "shop_money": {
+      "amount": "231.57",
+      "currency_code": "BRL"
+    },
+    "presentment_money": {
+      "amount": "231.57",
+      "currency_code": "BRL"
+    }
+  },
+  "current_total_tax": "0.00",
+  "current_total_tax_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "BRL"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "BRL"
+    }
+  },
+  "customer_locale": "pt-BR",
+  "device_id": null,
+  "discount_codes": [
+    {
+      "code": "pix7off",
+      "amount": "17.43",
+      "type": "percentage"
+    }
+  ],
+  "duties_included": false,
+  "email": "karinapires87@yahoo.com.br",
+  "estimated_taxes": false,
+  "financial_status": "paid",
+  "fulfillment_status": null,
+  "landing_site": "/collections/cabelo-pele-unhas?utm_source=Facebook&utm_medium=10 - RMKT - MIX QUENTE 90D&utm_campaign=❤️[CPU - HAIR] ABO / RMKT GERAL&utm_content=21 -  CT01 OFERTA RELAMPAGO&fbclid=PAZXh0bgNhZW0BMABhZGlkAasgHn5AmSwBp_omiqA4n0OhAz3uxX47EgGvx0jI95Y9LUP_XKq6Uhl7FaxQ3qp-mtIMg71x_aem_uwPokWDnLNMnB143n7QqjA&sol_source=ig&sol_medium=Instagram_Stories&sol_campaign=120210055594960556&sol_content=120222931886320556&utm_id=120210055594960556_v2_s04&utm_term=120220120213570556&campaign_id=120210055594960556&ad_id=120222931886320556",
+  "landing_site_ref": null,
+  "location_id": null,
+  "merchant_business_entity_id": "MTMxMzE5MTYzMDEy",
+  "merchant_of_record_app_id": null,
+  "name": "742478",
+  "note": null,
+  "note_attributes": [
+    {
+      "name": "utm_id",
+      "value": "120210055594960556_v2_s04"
+    },
+    {
+      "name": "utm_source",
+      "value": "Facebook"
+    },
+    {
+      "name": "utm_medium",
+      "value": "10 - RMKT - MIX QUENTE 90D"
+    },
+    {
+      "name": "utm_campaign",
+      "value": "❤️[CPU - HAIR] ABO / RMKT GERAL"
+    },
+    {
+      "name": "utm_term",
+      "value": "120220120213570556"
+    },
+    {
+      "name": "utm_data_source",
+      "value": "checkout_promotions_url_bar"
+    },
+    {
+      "name": "additional_info_shipping_price",
+      "value": "0.00"
+    },
+    {
+      "name": "additional_info_shipping_method",
+      "value": "LOGGI"
+    },
+    {
+      "name": "additional_info_shipping_zipcode",
+      "value": "25555-402"
+    },
+    {
+      "name": "additional_info_shipping_province",
+      "value": "RJ"
+    },
+    {
+      "name": "additional_info_shipping_city",
+      "value": "São João de Meriti"
+    },
+    {
+      "name": "additional_info_shipping_neighborhood",
+      "value": "Agostinho Porto"
+    },
+    {
+      "name": "additional_info_shipping_complement",
+      "value": ""
+    },
+    {
+      "name": "additional_info_shipping_number",
+      "value": "634"
+    },
+    {
+      "name": "additional_info_shipping_street",
+      "value": "Rua Doutor Agostinho Porto"
+    },
+    {
+      "name": "additional_info_shipping_full_address",
+      "value": "Rua Doutor Agostinho Porto, 634, Agostinho Porto, São João de Meriti, RJ, 25555-402, Brazil"
+    },
+    {
+      "name": "additional_info_billing_zipcode",
+      "value": "25555-402"
+    },
+    {
+      "name": "additional_info_billing_province",
+      "value": "RJ"
+    },
+    {
+      "name": "additional_info_billing_city",
+      "value": "São João de Meriti"
+    },
+    {
+      "name": "additional_info_billing_neighborhood",
+      "value": "Agostinho Porto"
+    },
+    {
+      "name": "additional_info_billing_complement",
+      "value": ""
+    },
+    {
+      "name": "additional_info_billing_number",
+      "value": "634"
+    },
+    {
+      "name": "additional_info_billing_street",
+      "value": "Rua Doutor Agostinho Porto"
+    },
+    {
+      "name": "additional_info_billing_full_address",
+      "value": "Rua Doutor Agostinho Porto, 634, Agostinho Porto, São João de Meriti, RJ, 25555-402, Brazil"
+    },
+    {
+      "name": "additional_cpf_cnpj",
+      "value": "12201303703"
+    },
+    {
+      "name": "shipping_street_name",
+      "value": "Rua Doutor Agostinho Porto"
+    },
+    {
+      "name": "shipping_street_number",
+      "value": "634"
+    },
+    {
+      "name": "shipping_street_complement",
+      "value": "Agostinho Porto"
+    },
+    {
+      "name": "shipping_neighborhood",
+      "value": "Agostinho Porto"
+    },
+    {
+      "name": "shipping_full_address",
+      "value": "Rua Doutor Agostinho Porto, 634 - Agostinho Porto - São João de Meriti/RJ - 25555402"
+    },
+    {
+      "name": "billing_street_name",
+      "value": "Rua Doutor Agostinho Porto"
+    },
+    {
+      "name": "billing_street_number",
+      "value": "634"
+    },
+    {
+      "name": "billing_street_complement",
+      "value": "Agostinho Porto"
+    },
+    {
+      "name": "billing_neighborhood",
+      "value": "Agostinho Porto"
+    },
+    {
+      "name": "billing_full_address",
+      "value": "Rua Doutor Agostinho Porto, 634 - Agostinho Porto - São João de Meriti/RJ - 25555402"
+    },
+    {
+      "name": "payment_method",
+      "value": "Appmax"
+    },
+    {
+      "name": "appmax_order_id",
+      "value": 91898043
+    },
+    {
+      "name": "payment_type",
+      "value": "pix"
+    },
+    {
+      "name": "payment_pix_code",
+      "value": "00020101021226770014BR.GOV.BCB.PIX2555api.itau/pix/qr/v2/ecd6bc78-95c6-4791-9585-34c0416e4e505204000053039865802BR5906APPMAX6009CAMPO BOM62070503***63047E86"
+    },
+    {
+      "name": "payment_expiration_date",
+      "value": "2025-07-01 01:05:33"
+    }
+  ],
+  "number": 741478,
+  "order_number": 742478,
+  "order_status_url": "https://www.gummy.com.br/31319163012/orders/b81f613514dc7081437eeeb48c6e00df/authenticate?key=384e7af03310332dd1bc39d2322afdf1",
+  "original_total_additional_fees_set": null,
+  "original_total_duties_set": null,
+  "payment_gateway_names": [
+    "Appmax Pix"
+  ],
+  "phone": null,
+  "po_number": null,
+  "presentment_currency": "BRL",
+  "processed_at": "2025-07-01T00:35:34-03:00",
+  "reference": null,
+  "referring_site": "http://instagram.com/",
+  "source_identifier": null,
+  "source_name": "web",
+  "source_url": null,
+  "subtotal_price": "231.57",
+  "subtotal_price_set": {
+    "shop_money": {
+      "amount": "231.57",
+      "currency_code": "BRL"
+    },
+    "presentment_money": {
+      "amount": "231.57",
+      "currency_code": "BRL"
+    }
+  },
+  "tags": "Cupons:  pix7off, pix7off, Utilizou Cupom de Desconto",
+  "tax_exempt": false,
+  "tax_lines": [],
+  "taxes_included": false,
+  "test": false,
+  "token": "b81f613514dc7081437eeeb48c6e00df",
+  "total_cash_rounding_payment_adjustment_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "BRL"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "BRL"
+    }
+  },
+  "total_cash_rounding_refund_adjustment_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "BRL"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "BRL"
+    }
+  },
+  "total_discounts": "17.43",
+  "total_discounts_set": {
+    "shop_money": {
+      "amount": "17.43",
+      "currency_code": "BRL"
+    },
+    "presentment_money": {
+      "amount": "17.43",
+      "currency_code": "BRL"
+    }
+  },
+  "total_line_items_price": "249.00",
+  "total_line_items_price_set": {
+    "shop_money": {
+      "amount": "249.00",
+      "currency_code": "BRL"
+    },
+    "presentment_money": {
+      "amount": "249.00",
+      "currency_code": "BRL"
+    }
+  },
+  "total_outstanding": "0.00",
+  "total_price": "231.57",
+  "total_price_set": {
+    "shop_money": {
+      "amount": "231.57",
+      "currency_code": "BRL"
+    },
+    "presentment_money": {
+      "amount": "231.57",
+      "currency_code": "BRL"
+    }
+  },
+  "total_shipping_price_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "BRL"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "BRL"
+    }
+  },
+  "total_tax": "0.00",
+  "total_tax_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "BRL"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "BRL"
+    }
+  },
+  "total_tip_received": "0.00",
+  "total_weight": 540,
+  "updated_at": "2025-07-01T00:36:21-03:00",
+  "user_id": null,
+  "billing_address": {
+    "first_name": "Karina Pires de",
+    "address1": "Rua Doutor Agostinho Porto, ⁠634",
+    "phone": "21983517257",
+    "city": "São João de Meriti",
+    "zip": "25555-402",
+    "province": "Rio de Janeiro",
+    "country": "Brazil",
+    "last_name": "Souza",
+    "address2": "⁠Agostinho Porto",
+    "company": null,
+    "latitude": -22.7853594,
+    "longitude": -43.3764018,
+    "name": "Karina Pires de Souza",
+    "country_code": "BR",
+    "province_code": "RJ"
+  },
+  "customer": {
+    "id": 5074339332228,
+    "email": "karinapires87@yahoo.com.br",
+    "created_at": "2021-04-24T11:14:21-03:00",
+    "updated_at": "2025-07-01T00:35:36-03:00",
+    "first_name": "Karina",
+    "last_name": "Souza",
+    "state": "enabled",
+    "note": null,
+    "verified_email": true,
+    "multipass_identifier": null,
+    "tax_exempt": false,
+    "phone": "+5521983517257",
+    "currency": "BRL",
+    "tax_exemptions": [],
+    "admin_graphql_api_id": "gid://shopify/Customer/5074339332228",
+    "default_address": {
+      "id": 11096913412228,
+      "customer_id": 5074339332228,
+      "first_name": "Karina Pires de",
+      "last_name": "Souza",
+      "company": null,
+      "address1": "Rua Doutor Agostinho Porto, ⁠634",
+      "address2": "⁠Agostinho Porto",
+      "city": "São João de Meriti",
+      "province": "Rio de Janeiro",
+      "country": "Brazil",
+      "zip": "25555-402",
+      "phone": "21983517257",
+      "name": "Karina Pires de Souza",
+      "province_code": "RJ",
+      "country_code": "BR",
+      "country_name": "Brazil",
+      "default": true
+    }
+  },
+  "discount_applications": [
+    {
+      "target_type": "line_item",
+      "type": "discount_code",
+      "value": "7.0",
+      "value_type": "percentage",
+      "allocation_method": "each",
+      "target_selection": "entitled",
+      "code": "pix7off"
+    }
+  ],
+  "fulfillments": [],
+  "line_items": [
+    {
+      "id": 14578058133636,
+      "admin_graphql_api_id": "gid://shopify/LineItem/14578058133636",
+      "current_quantity": 1,
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 540,
+      "name": "Gummy Hair® ZERO - 180 g - 3 und - 3 Potes",
+      "price": "249.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "249.00",
+          "currency_code": "BRL"
+        },
+        "presentment_money": {
+          "amount": "249.00",
+          "currency_code": "BRL"
+        }
+      },
+      "product_exists": true,
+      "product_id": 7297446510724,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sales_line_item_group_id": null,
+      "sku": "CBGH662",
+      "taxable": false,
+      "title": "Gummy Hair® ZERO - 180 g - 3 und",
+      "total_discount": "0.00",
+      "total_discount_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "BRL"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "BRL"
+        }
+      },
+      "variant_id": 41911208771716,
+      "variant_inventory_management": "shopify",
+      "variant_title": "3 Potes",
+      "vendor": "Gummy",
+      "tax_lines": [],
+      "duties": [],
+      "discount_allocations": [
+        {
+          "amount": "17.43",
+          "amount_set": {
+            "shop_money": {
+              "amount": "17.43",
+              "currency_code": "BRL"
+            },
+            "presentment_money": {
+              "amount": "17.43",
+              "currency_code": "BRL"
+            }
+          },
+          "discount_application_index": 0
+        }
+      ]
+    }
+  ],
+  "payment_terms": null,
+  "refunds": [],
+  "shipping_address": {
+    "first_name": "Karina Pires de",
+    "address1": "Rua Doutor Agostinho Porto, ⁠634",
+    "phone": "21983517257",
+    "city": "São João de Meriti",
+    "zip": "25555-402",
+    "province": "Rio de Janeiro",
+    "country": "Brazil",
+    "last_name": "Souza",
+    "address2": "⁠Agostinho Porto",
+    "company": null,
+    "latitude": -22.7853594,
+    "longitude": -43.3764018,
+    "name": "Karina Pires de Souza",
+    "country_code": "BR",
+    "province_code": "RJ"
+  },
+  "shipping_lines": [
+    {
+      "id": 5120593985668,
+      "carrier_identifier": "abb704f329fd66e7d640564db3775ae2",
+      "code": "LOG_VIP_2",
+      "current_discounted_price_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "BRL"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "BRL"
+        }
+      },
+      "discounted_price": "0.00",
+      "discounted_price_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "BRL"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "BRL"
+        }
+      },
+      "is_removed": false,
+      "phone": null,
+      "price": "0.00",
+      "price_set": {
+        "shop_money": {
+          "amount": "0.00",
+          "currency_code": "BRL"
+        },
+        "presentment_money": {
+          "amount": "0.00",
+          "currency_code": "BRL"
+        }
+      },
+      "requested_fulfillment_service_id": null,
+      "source": "Frenet",
+      "title": "LOGGI",
+      "tax_lines": [],
+      "discount_allocations": []
+    }
+  ],
+  "returns": []
+} 
