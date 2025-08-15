@@ -5,6 +5,8 @@ const router = express.Router();
 const orderRoutes = require('./orders');
 const historyLogRoutes = require('./historyLogs');
 const queueRoutes = require('./queues');
+const authRoutes = require('./auth');  
+const userRoutes = require('./user'); 
 
 // Middleware para log de requisições
 router.use((req, res, next) => {
@@ -27,6 +29,8 @@ router.get('/health', (req, res) => {
 router.use('/orders', orderRoutes);
 router.use('/history-logs', historyLogRoutes);
 router.use('/queues', queueRoutes);
+router.use('/auth', authRoutes);
+router.use('/user', userRoutes);
 
 // Rota padrão para endpoints não encontrados
 router.use('*', (req, res) => {
