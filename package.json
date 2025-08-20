@@ -6,6 +6,7 @@
   "scripts": {
    
     "dev": "NODE_ENV=development node -r dotenv/config src/server.js dotenv_config_path=.env-dev",
+    "dev2": "nodemon --exec sucrase-node src/server.js",
     "prod": "NODE_ENV=production node src/server.js",
     "test": "NODE_ENV=test jest",
     "test:watch": "NODE_ENV=test jest --watch",
