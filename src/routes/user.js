@@ -1,13 +1,11 @@
 const { Router } = require('express');
-const middleware = require('../middlewares/middleware');
-import userController from '../modules/user/controllers/user_controller';
+const userController = require('../modules/user/controllers/user_controller').default;
 
 const routes = Router();
-
-routes.post('/', middleware, userController.createUser);
-routes.get('/', middleware, userController.getAllUsers);
-routes.get('/:id', middleware, userController.getUserById);
-routes.put('/:id', middleware, userController.updateUser);
-routes.delete('/:id', middleware, userController.deleteUser);
+routes.post('/', (req, res) => userController.createUser(req, res));
+routes.get('/',  userController.getAllUsers);
+routes.get('/:id',  userController.getUserById);
+routes.put('/:id',  userController.updateUser);
+routes.delete('/:id',  userController.deleteUser);
 
 module.exports = routes;

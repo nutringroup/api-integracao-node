@@ -1,7 +1,7 @@
 const User = require("../../../user/shared/models/user");
 const ProfileEnum = require("../../../profile/shared/enum/profile_enum");
 const authHelper = require("../helpers/auth_helper");
-const { default: authTokenServices } = require("./auth_token_services.");
+const { default: authTokenServices } = require("./auth_token_service");
 const CreateTokenEnum = require("../enum/create_token_enum");
 
 class AuthService {

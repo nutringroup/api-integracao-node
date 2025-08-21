@@ -2,16 +2,14 @@ import bcrypt from 'bcryptjs';
 import { Transaction } from "sequelize";
 import User from "../models/user";
 import UserHelper from "../helpers/user_helper";
-
 import { UserStatusEnum } from '../enum/user_status_enum';
-import { ProfileEnum } from '../../../profile/shared/enum/profile_enum';
-import { CreateTokenEnum } from '../../../auth/shared/enum/create_token_enum';
-
-
-import authTokenServices from '../../../auth/shared/services/auth_token_services.';
+import CreateTokenEnum from '../../../auth/shared/enum/create_token_enum';
+import ProfileEnum from '../../../profile/shared/enum/profile_enum';
+import authTokenServices from '../../../auth/shared/services/auth_token_service';
 import UserCreate from '../../implementations/user_create';
 import UserError from '../../../../shared/exceptions/user/user_exception';
 import HelperErrorException from '../../../../shared/exceptions/exception_error';
+
 
 class UserService {
 
@@ -23,6 +21,8 @@ class UserService {
 
       const userCreate = new UserCreate(data, transaction);
       const user = await userCreate.createUser();
+      if (!user || !user.id) throw new Error("Usuário não foi criado corretamente");
+
 
       const userProfile = await UserHelper.getUserProfileByIdUserWithTransaction(user.id, transaction);
       const token = authTokenServices.createTokenJWT(user.id, CreateTokenEnum.tokenLogin, userProfile.idProfile);

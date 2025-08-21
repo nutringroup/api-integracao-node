@@ -1,5 +1,5 @@
 const HelperErrorException = require("../../../../shared/exceptions/exception_error");
-const ProfileError = require("../../../../shared/exceptions/profile/profile_exception");
+const ProfileError = require("../../../../shared/exceptions/profile/profile_exception").default;;
 const Profile = require("../models/profile");
 
 class ProfileHelper {

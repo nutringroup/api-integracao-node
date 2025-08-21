@@ -36,8 +36,8 @@ class UserHelper {
   static async getUserProfileByIdUserWithTransaction(idUser, transaction) {
     try {
       const userProfile = await UserProfile.findOne({
-        where: { idUser: idUser }, 
-        attributes: ["id", "idProfile"], 
+        where: { id_user: idUser }, 
+        attributes: ["id", "id_profile"], 
         transaction,
       });
       if (!userProfile) throw new UserError();

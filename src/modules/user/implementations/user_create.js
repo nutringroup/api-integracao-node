@@ -53,7 +53,7 @@ class UserCreate {
   async insertUserProfile(idUser) {
     try {
       await UserProfile.create(
-        { idProfile: this.signUp.profile, idUser: idUser },
+        { id_profile: this.signUp.profile, id_user: idUser },
         { transaction: this.transaction }
       );
     } catch (error) {

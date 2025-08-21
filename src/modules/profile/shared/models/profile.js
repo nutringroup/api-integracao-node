@@ -1,33 +1,40 @@
-const { DataTypes } = require('sequelize');
-const SequelizeConnect = require('../../../../config/sequelize_request');
+const { Model, DataTypes } = require('sequelize');
+const SequelizeConnect = require("../../../../config/sequelize_request");
+const sequelize = SequelizeConnect.getInstance().getSequelize();
 
+class Profile extends Model {}
 
-const Profile = SequelizeConnect.define('profile', {
-  id: {
-    type: DataTypes.INTEGER,
-    autoIncrement: true,
-    primaryKey: true,
+Profile.init(
+  {
+    id: { 
+      type: DataTypes.INTEGER, 
+      autoIncrement: true, 
+      primaryKey: true 
+    },
+    name: { 
+      type: DataTypes.STRING, 
+      allowNull: false 
+    },
+    created_at: { 
+      type: DataTypes.DATE, 
+      allowNull: false, 
+      defaultValue: DataTypes.NOW 
+    },
+    updated_at: { 
+      type: DataTypes.DATE, 
+      allowNull: false, 
+      defaultValue: DataTypes.NOW 
+    },
   },
-  name: {
-    type: DataTypes.STRING,
-    allowNull: false,
-  },
-  created_at: {
-    type: DataTypes.DATE,
-    allowNull: false,
-    defaultValue: DataTypes.NOW,
-  },
-  updated_at: {
-    type: DataTypes.DATE,
-    allowNull: false,
-    defaultValue: DataTypes.NOW,
+  {
+    sequelize,
+    modelName: 'Profile',
+    tableName: 'profile',
+    freezeTableName: true,
+    timestamps: true,
+    createdAt: 'created_at',
+    updatedAt: 'updated_at',
   }
-}, {
-  tableName: 'profile',
-  timestamps: true,
-  createdAt: 'created_at',
-  updatedAt: 'updated_at',
-  freezeTableName: true,
-});
+);
 
 module.exports = Profile;

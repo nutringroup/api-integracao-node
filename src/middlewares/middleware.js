@@ -1,4 +1,4 @@
-const { default: authTokenServices } = require("../modules/auth/shared/services/auth_token_services.");
+const { default: authTokenServices } = require("../modules/auth/shared/services/auth_token_service");
 
 
 function middleware(req, res, next) {

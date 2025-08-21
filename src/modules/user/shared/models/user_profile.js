@@ -1,49 +1,48 @@
-const { DataTypes } = require('sequelize');
-const SequelizeConnect = require('../../../../config/sequelize_request');
+const { Model, DataTypes } = require('sequelize');
+const SequelizeConnect = require("../../../../config/sequelize_request");
+const sequelize = SequelizeConnect.getInstance().getSequelize();
 
+class UserProfile extends Model {}
 
-const UserProfile = SequelizeConnect.define('user_profile', {
-  id: {
-    type: DataTypes.INTEGER,
-    autoIncrement: true,
-    primaryKey: true,
-  },
-  id_profile: {
-    type: DataTypes.INTEGER,
-    allowNull: false,
-    references: {
-      model: 'profile',
-      key: 'id'
+UserProfile.init(
+  {
+    id: { 
+      type: DataTypes.INTEGER, 
+      autoIncrement: true, 
+      primaryKey: true 
     },
-    onUpdate: 'CASCADE',
-    onDelete: 'CASCADE'
-  },
-  id_user: {
-    type: DataTypes.INTEGER,
-    allowNull: false,
-    references: {
-      model: 'user',
-      key: 'id'
+    id_profile: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: { 
+        model: 'profile', 
+        key: 'id' 
+      },
+      onUpdate: 'CASCADE',
+      onDelete: 'CASCADE',
     },
-    onUpdate: 'CASCADE',
-    onDelete: 'CASCADE'
+    id_user: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: { 
+        model: 'user', 
+        key: 'id' 
+      },
+      onUpdate: 'CASCADE',
+      onDelete: 'CASCADE',
+    },
+    created_at: { type: DataTypes.DATE, allowNull: false, defaultValue: DataTypes.NOW },
+    updated_at: { type: DataTypes.DATE, allowNull: false, defaultValue: DataTypes.NOW },
   },
-  created_at: {
-    type: DataTypes.DATE,
-    allowNull: false,
-    defaultValue: DataTypes.NOW,
-  },
-  updated_at: {
-    type: DataTypes.DATE,
-    allowNull: false,
-    defaultValue: DataTypes.NOW,
+  {
+    sequelize,
+    modelName: 'UserProfile',
+    tableName: 'user_profile',
+    freezeTableName: true,
+    timestamps: true,
+    createdAt: 'created_at',
+    updatedAt: 'updated_at',
   }
-}, {
-  tableName: 'user_profile',
-  timestamps: true,
-  createdAt: 'created_at',
-  updatedAt: 'updated_at',
-  freezeTableName: true
-});
+);
 
 module.exports = UserProfile;

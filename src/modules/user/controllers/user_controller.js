@@ -1,12 +1,11 @@
 
-import SequelizeConnect from "../../../config/sequelize_request";
-import { sequelize } from "../../../models";
+const SequelizeConnect = require("../../../config/sequelize_request");
 import HelperErrorException from "../../../shared/exceptions/exception_error";
 import ProfileError from "../../../shared/exceptions/profile/profile_exception";
 import UserError from "../../../shared/exceptions/user/user_exception";
 import userService from "../shared/services/user_service";
 import userValidation from "../shared/validations/user_validation";
-const sequelize = SequelizeConnect.sequelizeConnect;
+const sequelize = SequelizeConnect.getInstance().getSequelize();
 
 class UserController {
 
@@ -18,6 +17,8 @@ class UserController {
       await transaction.commit();
       return res.json(user);
     } catch (error) {
+      console.error('Erro ao criar usuário:', error);
+       console.error('Stack:', error.stack); 
       await transaction.rollback();
       if (error instanceof UserError)
         return res.status(400).json({ error: error.message });
