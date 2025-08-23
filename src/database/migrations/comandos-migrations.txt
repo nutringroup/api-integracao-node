@@ -1,0 +1,5 @@
+npx sequelize-cli migration:create --name=create
+npx sequelize-cli db:migrate
+
+sequelize db:migrate:undo
+node_modules/.bin/sequelize db:migrate:undo:all --to 20200912161520-create.js
