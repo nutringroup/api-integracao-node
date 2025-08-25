@@ -18,5 +18,8 @@ HelperErrorException.profileNotFound = 'Perfil não encontrado!';
 HelperErrorException.userNotFound = 'Usuário não encontrado!';
 HelperErrorException.orderNotFound = 'Pedido não encontrado!';
 HelperErrorException.invalidJson = 'JSON do pedido inválido';
+HelperErrorException.logNotFound = 'Nenhum Log encontrado!';
+HelperErrorException.requiredFields = 'step e shopify_id são obrigatórios';
+HelperErrorException.oldLogsCleanFail = 'Erro ao limpar logs antigos!';
 
 export default HelperErrorException;
