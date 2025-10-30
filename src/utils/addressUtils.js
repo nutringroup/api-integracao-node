@@ -1,6 +1,7 @@
 const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
+const Abbreviation = require('../modules/abbreviation/shared/models/abbreviation');
 
 /**
  * Utilitários para validação e formatação de endereços
@@ -9,31 +10,24 @@ const path = require('path');
 
 class AddressUtils {
   constructor() {
-    this.abbreviations = this.loadAbbreviations();
+     this.abbreviations = {};
   }
 
   /**
    * Carrega abreviações do arquivo CSV
    * @returns {object}
    */
-  loadAbbreviations() {
+  async loadAbbreviations() {
     try {
-      const csvPath = path.join(__dirname, '../../data/ABREVIACAO.csv');
-      const csvContent = fs.readFileSync(csvPath, 'utf8');
-      const lines = csvContent.split('\n');
+      const registros = await Abbreviation.findAll();
       const abbreviations = {};
 
-      // Pula a primeira linha (cabeçalho)
-      for (let i = 1; i < lines.length; i++) {
-        const line = lines[i].trim();
-        if (line) {
-          const [abbreviation, word] = line.split(',');
-          if (abbreviation && word) {
-            abbreviations[word.toUpperCase()] = abbreviation;
-          }
-        }
-      }
+      registros.forEach(r => {
+        abbreviations[r.word.toUpperCase()] = r.abbreviation;
+      });
 
+      this.abbreviations = abbreviations;
+      
       return abbreviations;
     } catch (error) {
       console.warn('Erro ao carregar abreviações:', error.message);
