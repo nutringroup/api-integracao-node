@@ -1,9 +1,9 @@
 const { default: HelperErrorException } = require('../../../../shared/exceptions/exception_error');
 const historyLogHelper = require('../helpers/history_log_helper');
-import { Op } from 'sequelize';
-import HistoryLogError from '../../../../shared/exceptions/history-log/history_log_exception';
-import  HistoryLog  from '../models/history_log';
-
+// import { Op } from 'sequelize';
+const { Op } = require('sequelize');
+const HistoryLogError = require('../../../../shared/exceptions/history-log/history_log_exception');
+const HistoryLog = require('../models/history_log');
 
 class HistoryLogService {
 

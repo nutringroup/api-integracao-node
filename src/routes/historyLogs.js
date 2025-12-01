@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
-//const historyLogController = require('../controllers/HistoryLogController');
+// const historyLogController = require('../controllers/HistoryLogController');
 const historyLogController = require('../modules/history-log/controllers/history_log_controller');
 
 // Instanciar controlador
-const historyLogController = new historyLogController();
+// const historyLogController = new HistoryLogController();
 
 // Rotas para logs de histórico
 router.get('/', historyLogController.listLogs.bind(historyLogController));

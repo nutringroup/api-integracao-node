@@ -1,6 +1,6 @@
 const HistoryLogError = require('../../../shared/exceptions/history-log/history_log_exception');
-const { logger } = require('../config/logger');
-const historyLogService = require('../services/historyLog.service');
+const { logger } = require('../../../config/logger');
+const historyLogService = require('../shared/services/history_log_service');
 
 class HistoryLogController {
   

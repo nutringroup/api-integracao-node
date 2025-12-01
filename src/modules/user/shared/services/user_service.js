@@ -1,14 +1,13 @@
-import bcrypt from 'bcryptjs';
-import { Transaction } from "sequelize";
-import User from "../models/user";
-import UserHelper from "../helpers/user_helper";
-import { UserStatusEnum } from '../enum/user_status_enum';
-import CreateTokenEnum from '../../../auth/shared/enum/create_token_enum';
-import ProfileEnum from '../../../profile/shared/enum/profile_enum';
-import authTokenServices from '../../../auth/shared/services/auth_token_service';
-import UserCreate from '../../implementations/user_create';
-import UserError from '../../../../shared/exceptions/user/user_exception';
-import HelperErrorException from '../../../../shared/exceptions/exception_error';
+const bcrypt = require('bcryptjs');
+const User = require("../models/user");
+const UserHelper = require("../helpers/user_helper");
+const UserStatusEnum = require('../enum/user_status_enum');
+const CreateTokenEnum = require('../../../auth/shared/enum/create_token_enum');
+const ProfileEnum = require('../../../profile/shared/enum/profile_enum');
+const authTokenServices = require('../../../auth/shared/services/auth_token_service');
+const UserCreate = require('../../implementations/user_create');
+const UserError = require('../../../../shared/exceptions/user/user_exception');
+const HelperErrorException = require('../../../../shared/exceptions/exception_error');
 
 
 class UserService {
@@ -79,4 +78,4 @@ class UserService {
   }
 }
 
-export default new UserService();
+module.exports = new UserService();

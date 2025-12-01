@@ -1,4 +1,4 @@
-const { HistoryLog } = require('../models');
+const { HistoryLog } = require('../models/history_log');
 const { Op } = require('sequelize');
 
 class HistoryLogHelper {

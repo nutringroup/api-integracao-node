@@ -1,8 +1,8 @@
-import UserHelper from "../shared/helpers/user_helper";
-import User from "../shared/models/user";
-import UserProfile from "../shared/models/user_profile";
-import ProfileHelper from "../../profile/shared/helpers/profile_helper";
-import { UserStatusEnum } from "../shared/enum/user_status_enum";
+const UserHelper = require("../shared/helpers/user_helper");
+const User = require("../shared/models/user");
+const UserProfile = require("../shared/models/user_profile");
+const ProfileHelper = require("../../profile/shared/helpers/profile_helper");
+const UserStatusEnum = require("../shared/enum/user_status_enum");
 
 class UserCreate {
 
@@ -77,4 +77,4 @@ class UserCreate {
 
 }
 
-export default UserCreate;
+module.exports = UserCreate;

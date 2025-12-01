@@ -1,5 +1,5 @@
-import * as Yup from 'yup';
-import AuthError from '../../../../shared/exceptions/auth/auth_exception';
+const Yup = require('yup');
+const AuthError = require('../../../../shared/exceptions/auth/auth_exception');
 
 class UserValidation {
 
@@ -27,4 +27,4 @@ class UserValidation {
 
 }
 
-export default new UserValidation();
+module.exports = new UserValidation();

@@ -22,4 +22,4 @@ HelperErrorException.logNotFound = 'Nenhum Log encontrado!';
 HelperErrorException.requiredFields = 'step e shopify_id são obrigatórios';
 HelperErrorException.oldLogsCleanFail = 'Erro ao limpar logs antigos!';
 
-export default HelperErrorException;
+module.exports = HelperErrorException;

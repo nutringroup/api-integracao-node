@@ -1,10 +1,9 @@
-
 const SequelizeConnect = require("../../../config/sequelize_request");
-import HelperErrorException from "../../../shared/exceptions/exception_error";
-import ProfileError from "../../../shared/exceptions/profile/profile_exception";
-import UserError from "../../../shared/exceptions/user/user_exception";
-import userService from "../shared/services/user_service";
-import userValidation from "../shared/validations/user_validation";
+const HelperErrorException = require("../../../shared/exceptions/exception_error");
+const ProfileError = require("../../../shared/exceptions/profile/profile_exception");
+const UserError = require("../../../shared/exceptions/user/user_exception");
+const userService = require("../shared/services/user_service");
+const userValidation = require("../shared/validations/user_validation");
 const sequelize = SequelizeConnect.getInstance().getSequelize();
 
 class UserController {
@@ -85,4 +84,4 @@ class UserController {
   }
 }
 
-export default new UserController();
+module.exports = new UserController();

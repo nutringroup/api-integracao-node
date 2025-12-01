@@ -1,8 +1,8 @@
-import jwt from 'jsonwebtoken';
+const jwt = require('jsonwebtoken');
 
-import AuthConfig from '../../../../config/auth';
-import TokenError from '../../../../shared/exceptions/auth/token_jwt_exception';
-import CreateTokenEnum from '../enum/create_token_enum';
+const AuthConfig = require('../../../../config/auth');
+const TokenError = require('../../../../shared/exceptions/auth/token_jwt_exception');
+const CreateTokenEnum = require('../enum/create_token_enum');
 
 class AuthTokenService {
   
@@ -45,4 +45,4 @@ class AuthTokenService {
   }
 }
 
-export default new AuthTokenService();
+module.exports = new AuthTokenService();

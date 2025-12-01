@@ -1,10 +1,10 @@
-import AuthError from "../../../../shared/exceptions/auth/auth_exception";
-import User from "../models/user";
-import ProfileError from "../../../../shared/exceptions/profile/profile_exception";
-import HelperErrorException from "../../../../shared/exceptions/exception_error";
-import { UserStatusEnum } from "../enum/user_status_enum";
-import UserProfile from "../models/user_profile";
-import UserError from "../../../../shared/exceptions/user/user_exception";
+const AuthError = require("../../../../shared/exceptions/auth/auth_exception");
+const User = require("../models/user");
+const ProfileError = require("../../../../shared/exceptions/profile/profile_exception");
+const HelperErrorException = require("../../../../shared/exceptions/exception_error");
+const UserStatusEnum = require("../enum/user_status_enum");
+const UserProfile = require("../models/user_profile");
+const UserError = require("../../../../shared/exceptions/user/user_exception");
 
 class UserHelper {
 
@@ -104,4 +104,4 @@ class UserHelper {
   }
 }
 
-export default UserHelper;
+module.exports = UserHelper;

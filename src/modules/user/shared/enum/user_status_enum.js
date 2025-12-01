@@ -1,4 +1,6 @@
-export const UserStatusEnum = Object.freeze({
+const UserStatusEnum = Object.freeze({
   inactive: 0,
-  active: 1
+  active: 1,
 });
+
+module.exports = UserStatusEnum;

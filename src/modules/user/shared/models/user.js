@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require("sequelize");
 const bcrypt = require("bcryptjs");
 const CreateTokenEnum = require("../../../auth/shared/enum/create_token_enum");
-const { default: authTokenServices } = require("../../../auth/shared/services/auth_token_service");
+const authTokenServices = require("../../../auth/shared/services/auth_token_service");
 const SequelizeConnect = require("../../../../config/sequelize_request");
 
 const sequelize = SequelizeConnect.getInstance().getSequelize();
