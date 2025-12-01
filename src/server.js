@@ -157,7 +157,7 @@ async function startServer() {
     await testConnection();
     
     // Conectar ao Redis
-    await connectRedis();
+    //await connectRedis();
     
     // Sincronizar modelos
     await syncModels();
