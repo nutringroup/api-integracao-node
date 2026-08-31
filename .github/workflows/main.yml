@@ -1,0 +1,38 @@
+name: Deploy to Server
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  verify-author:
+    name: Verificar autoria
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Commit precisa identificar o autor
+      run: |
+        MSG=$(git log -1 --format=%B)
+        IDS=$(git log -1 --format='%ae %ce')
+        echo "$MSG" | grep -q '^Alterado-por: Antonio Duarte' && exit 0
+        echo "$IDS" | grep -q 'suporte@nutrin.com.br' && exit 0
+        echo "::error::Commit sem identificação de autoria ('Alterado-por: Antonio Duarte' ou author suporte@nutrin.com.br). Deploy bloqueado."
+        exit 1
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: verify-author
+
+    steps:
+    - name: Check out the repository
+      uses: actions/checkout@v2
+
+    - name: Setup SSH
+      uses: webfactory/ssh-agent@v0.5.3
+      with:
+        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+    - name: Deploy to Servers
+      run: |
+        ssh -o StrictHostKeyChecking=no root@104.251.212.234 'cd /var/www/html/api.gummy.com.br && git pull'
